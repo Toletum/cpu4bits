@@ -1,0 +1,65 @@
+<circuit version="2.0.0-" rev="250808" stepSize="1000000" stepsPS="500000" NLsteps="100000" reaStep="1000000" animate="1" anicurr="0" width="3200" height="2400" >
+
+<item itemtype="Subcircuit" CircId="7414-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-224,-116" rotation="0" hflip="1" vflip="1" label="7414-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Package="2- DIP" />
+
+<item itemtype="elCapacitor" CircId="elCapacitor-2" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="-320,-112" rotation="0" hflip="1" vflip="1" label="elCapacitor-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="100 µF" Resistance="1 Ω" InitVolt="0 V" />
+
+<item itemtype="Resistor" CircId="Resistor-3" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-268,-84" rotation="-450" hflip="1" vflip="1" label="Resistor-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="10 kΩ" />
+
+<item itemtype="Ground" CircId="Ground-5" mainComp="false" Show_id="false" Show_Val="false" Pos="-340,28" rotation="0" hflip="1" vflip="1" label="Ground-5" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Led" CircId="Led-12" mainComp="false" Show_id="false" Show_Val="false" Pos="-216,-28" rotation="0" hflip="1" vflip="1" label="Led-12" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-14" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-176,-12" rotation="-450" hflip="1" vflip="1" label="Resistor-14" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="220 Ω" />
+
+<item itemtype="FreqMeter" CircId="FreqMeter-27" mainComp="false" Show_id="false" Show_Val="false" Pos="-80,-40" rotation="0" hflip="1" vflip="1" label="FreqMeter-27" idLabPos="-32,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Filter="0.1 V" />
+
+<item itemtype="LAnalizer" CircId="LAnalizer-39" mainComp="false" Show_id="false" Show_Val="false" Pos="88,-72" rotation="0" hflip="1" vflip="1" label="LAnalizer-39" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="100000" connectGnd="true" InputImped="10 MΩ" TestTime="0 ns" DoTest="false" TimDiv="1000000000000" TimPos="1000000000000" VolDiv="0.15" Tunnels=",,,,,,,," Trigger="9" TimeStep="1000 _ps" AutoExport="false" TresholdR="2.5 V" Bus="false,false,false,false,false,false,false,false," TresholdF="2.5 V" />
+
+<item itemtype="Node" CircId="Node-24" mainComp="false" Pos="-240,-100" />
+
+<item itemtype="Node" CircId="Node-25" mainComp="false" Pos="-240,-92" />
+
+<item itemtype="Node" CircId="Node-26" mainComp="false" Pos="-340,4" />
+
+<item itemtype="Node" CircId="Node-28" mainComp="false" Pos="-240,-40" />
+
+<item itemtype="Node" CircId="Node-37" mainComp="false" Pos="-268,-112" />
+
+<item itemtype="Node" CircId="Node-40" mainComp="false" Pos="-156,-40" />
+
+<item itemtype="Connector" uid="Connector-72" startpinid="Node-24-2" endpinid="7414-1-1Y" pointList="-240,-100,-232,-100" />
+
+<item itemtype="Connector" uid="Connector-73" startpinid="Node-25-1" endpinid="7414-1-3A" pointList="-240,-92,-240,-76,-232,-76" />
+
+<item itemtype="Connector" uid="Connector-74" startpinid="Node-24-1" endpinid="Node-25-0" pointList="-240,-100,-240,-92" />
+
+<item itemtype="Connector" uid="Connector-75" startpinid="Node-25-2" endpinid="7414-1-2A" pointList="-240,-92,-232,-92" />
+
+<item itemtype="Connector" uid="Connector-79" startpinid="Led-12-rPin" endpinid="Resistor-14-rPin" pointList="-200,-28,-176,-28" />
+
+<item itemtype="Connector" uid="Connector-80" startpinid="Resistor-14-lPin" endpinid="Node-26-1" pointList="-176,4,-340,4" />
+
+<item itemtype="Connector" uid="Connector-81" startpinid="elCapacitor-2-lPin" endpinid="Node-26-0" pointList="-336,-112,-340,-112,-340,4" />
+
+<item itemtype="Connector" uid="Connector-82" startpinid="Node-26-2" endpinid="Ground-5-Gnd" pointList="-340,4,-340,12" />
+
+<item itemtype="Connector" uid="Connector-84" startpinid="7414-1-3Y" endpinid="Node-28-0" pointList="-232,-68,-240,-68,-240,-40" />
+
+<item itemtype="Connector" uid="Connector-85" startpinid="Node-28-2" endpinid="Led-12-lPin" pointList="-240,-40,-240,-28,-232,-28" />
+
+<item itemtype="Connector" uid="Connector-98" startpinid="Resistor-3-lPin" endpinid="Node-24-0" pointList="-268,-68,-252,-68,-252,-100,-240,-100" />
+
+<item itemtype="Connector" uid="Connector-108" startpinid="Node-37-1" endpinid="elCapacitor-2-rPin" pointList="-268,-112,-304,-112" />
+
+<item itemtype="Connector" uid="Connector-109" startpinid="Resistor-3-rPin" endpinid="Node-37-0" pointList="-268,-100,-268,-112" />
+
+<item itemtype="Connector" uid="Connector-110" startpinid="Node-37-2" endpinid="7414-1-1A" pointList="-268,-112,-232,-112,-232,-108" />
+
+<item itemtype="Connector" uid="Connector-111" startpinid="LAnalizer-39-Pin0" endpinid="Node-40-1" pointList="0,-136,-156,-136,-156,-40" />
+
+<item itemtype="Connector" uid="Connector-112" startpinid="FreqMeter-27-lPin" endpinid="Node-40-0" pointList="-120,-40,-156,-40" />
+
+<item itemtype="Connector" uid="Connector-113" startpinid="Node-40-2" endpinid="Node-28-1" pointList="-156,-40,-240,-40" />
+
+</circuit>
